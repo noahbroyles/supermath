@@ -207,7 +207,7 @@ def stats(list):
     for number in list:
         newNum = (number - mean) ** 2
         new.append(newNum)
-    standard = math.sqrt(mean(new))
+    standard = math.sqrt(average(new))
 
     # Get variance
     variance = exp(standard, 2)
