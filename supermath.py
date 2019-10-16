@@ -22,12 +22,7 @@ class Validate:
             return False
 
     def isPc():
-        """This function will work 99% of the time. It can't be 100% accurate because some people might modify their Macintosh system to have a /home/ folder with their username in it, but it is unlikely.
-        The isMac() function will still come up as True, however."""
-        if not os.path.exists('/System/Library/CoreServices/Finder.app'):
-            return True
-        else:
-            return False 
+        return not isMac()
 
     def hasLenOf(obj, length):
         """This is for validating the length of a thing.""" 
@@ -151,7 +146,6 @@ def areaOfPolygonInCircle(sides, radius):
     return area
 
 # This method solves algebraic equations using Cramer's rule of matrixes with a prolem looking like this:
-
 def cramersRule(q, w, e,
                r, t, y):
     try:
