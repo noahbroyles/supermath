@@ -145,7 +145,7 @@ def areaOfPolygonInCircle(sides, radius):
     area = ((x * A) / 2) * (sides * 2)
     return area
 
-# This method solves algebraic equations using Cramer's rule of matrixes with a prolem looking like this:
+# This method solves algebraic equations using Cramer's rule of matrixes with a problem looking like this:
 def cramersRule(q, w, e,
                r, t, y):
     try:
