@@ -56,14 +56,15 @@ In the main part, there are more methods listed below:
             r, t, y)`
   returns x, y answers for an algebraic equation, such as:
   
-  4x - 5y = 3
-  3x + 2y = -10
+ `4x - 5y = 3
+  3x + 2y = -10`
     
    the q, w, e, r, t, y values would be as follows:
-     4, -5, 3, 3, 2, -10
+    ` 4, -5, 3, 3, 2, -10`
        and the method would return:
-         (-1.9130434782608696, -2.130434782608696)
+         `(-1.9130434782608696, -2.130434782608696)`
            which is the correct x, y, solution for this equation
+           
 `stats(list)`
   returns the mean, median, mode, range, standard deviation, and variance of a list of number values
   
