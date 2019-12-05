@@ -55,9 +55,7 @@ In the main part, there are more methods listed below:
 `cramersRule(q, w, e
             r, t, y)`
   returns x, y answers for an algebraic equation, such as:
-  
- `4x - 5y = 3
-  3x + 2y = -10`
+  `4x - 5y = 3 and 3x + 2y = -10`
     
    the q, w, e, r, t, y values would be as follows:
     ` 4, -5, 3, 3, 2, -10`
