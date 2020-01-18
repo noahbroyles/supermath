@@ -26,8 +26,8 @@ In the main part, there are more methods listed below:
 `squareRoot(number)`
   returns the square root of number
   
-`exp(num, pow)`
-  returns num to the pow power
+`fastExp(num, pow)`
+  returns num to the pow power using a super efficient algorithm
 
 `quadratic(a, b, c)`
   returns x, y coordinates of a quadratic equation given a, b, and c
