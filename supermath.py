@@ -58,10 +58,25 @@ def isRealNumber(number):
 def squareRoot(number):
     return math.sqrt(number)
 
-def exp(num, pow):
-    return num**pow
+def fastExp(num, power): 
+    # Thanks to anteprandium @ https://gist.github.com/anteprandium/3c5d855f96e3d39fe604 for the algorithm for super fast exponentiation in python!
+    def bits_of(m):
+        n=int(m)
+        while n:
+            yield n & 1
+            n >>= 1
+    
+    result = 1
+    partial = num
 
-# This is a beautiful quadratic equation solver! I used it for math. It worky!
+    for bit in bits_of(power):
+        if bit:
+            result *= partial
+        partial **= 2
+
+    return result
+
+# This is a beautiful quadratic equation solver! I used it for math. It worketh!
 def quadratic(a, b, c):
     try:
         x = (-b + math.sqrt(exp(b, 2) - (4*a*c))) / (2 * a)
