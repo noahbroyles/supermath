@@ -25,6 +25,10 @@ class Validate:
     def isPc():
         return not isMac()
 
+    def isWindows():
+        if os.path.exists("C:"):
+            return True
+
     def hasLenOf(obj, length):
         """This is for validating the length of a thing.""" 
         if len(obj) == length:
