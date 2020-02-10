@@ -48,6 +48,10 @@ def gcd(a, b):
         a, b = b % a, a
     return b
 
+# we know lcm * gcd of two numbers is equal to their product
+def lcm(a, b):
+    return (a * b)/gcd(a, b)
+
 def isRealNumber(number):
     if math.isnan(number) == False:
         return True
@@ -78,7 +82,7 @@ def fastExp(num, power):
 # This is a beautiful quadratic equation solver! I used it for math. It worketh!
 def quadratic(a, b, c):
     try:
-        x = (-b + math.sqrt(exp(b, 2) - (4*a*c))) / (2 * a)
+        x = (-b + math.sqrt(exp(b, 2) - (4 * a * c))) / (2 * a)
         y = (-b - math.sqrt(exp(b, 2) - (4 * a * c))) / (2 * a)
         return x, y
     except ValueError:
@@ -94,6 +98,10 @@ def volSphere(r):
 # Permutation notation
 def permNote(n, r):
     return (math.factorial(n) / math.factorial((n - r)))
+
+def combNote(n, r):
+    return permNote(n, r)/math.factorial(r)
+
 
 # Returns a division quotient with a remainder
 def divideRemain(dividend, divisor):
