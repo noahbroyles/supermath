@@ -4,9 +4,9 @@ This repo consists of one mudule I have written in python3 to help you cheat on 
 This is a module meant for importing, not running. Don't be disappointed when you run it and nothing happens. It should work wonders for you though when you import it.
 
 `class Validate():`
-  This class has four methods: `isPc()`, `isMac()`, `isWindows()` and `hasLenOf(object, length)`  
- `isPc()` returns True if you are using a PC and not a Mac.  
- `isMac()` returns True if you are using a Mac and not a PC.  
+  This class has four methods: `isLinux()`, `isMac()`, `isWindows()` and `hasLenOf(object, length)`  
+ `isLinux()` returns True if you are using a Linux PC.  
+ `isMac()` returns True if you are using a Mac.  
  `isWindows()` returns True if you are using a Windows PC.  
  `hasLenOf()` has two parameters called obj and length. It compares the length of an object such as a string or list and returns true if the length = the length param.
  
