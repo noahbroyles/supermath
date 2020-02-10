@@ -171,13 +171,16 @@ def areaOfPolygonInCircle(sides, radius):
 # This method solves algebraic equations using Cramer's rule of matrixes with a problem looking like this:
 def cramersRule(q, w, e,
                r, t, y):
-    try:
+    divisor = (q * t) - (r * w)
+    if divisor != 0:
         divisor = (q * t) - (r * w)
         x = ((e * t) - (y * w)) / divisor
         y = ((q * y) - (r * e)) / divisor
         return x, y
-    except ZeroDivisionError:
-        return "This problem has no solution."
+    elif (q * y) == (r * e):
+        return "This problem has infinite solutions (when equations are graphed, we get coincident lines)"
+    else:
+        return "This problem has no solution (when equations are graphed, they are parallel and do not intersect)"
 # Cramer's rule is just so hot! I sure wish I had been taught about it a long while ago!
 
 
