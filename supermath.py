@@ -86,9 +86,9 @@ def quadratic(a, b, c):
         y = (-b - math.sqrt(exp(b, 2) - (4 * a * c))) / (2 * a)
         return x, y
     except ValueError:
-        return 'Square root of negative number error! Don\'t ever do that again!'
+        return 'The equation has no real roots!'
     except ZeroDivisionError:
-        return 'Divide by zero error! Don\'t ever do that again!'
+        return 'The equation entered is not a quadratic (how could you enter a = 0)!!'
 
 # Returns the volume of a sphere based on the radius
 def volSphere(r):
@@ -99,6 +99,7 @@ def volSphere(r):
 def permNote(n, r):
     return (math.factorial(n) / math.factorial((n - r)))
 
+# Combination notation
 def combNote(n, r):
     return permNote(n, r)/math.factorial(r)
 
@@ -168,8 +169,7 @@ def areaOfPolygonInCircle(sides, radius):
     return area
 
 # This method solves algebraic equations using Cramer's rule of matrixes with a problem looking like this:
-def cramersRule(q, w, e,
-               r, t, y):
+def cramersRule(q, w, e, r, t, y):
     divisor = (q * t) - (r * w)
     if divisor != 0:
         x = ((e * t) - (y * w)) / divisor
