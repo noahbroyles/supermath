@@ -36,7 +36,7 @@ In the main part, there are more methods listed below:
 `quadratic(a, b, c)`
   returns x, y coordinates of a quadratic equation given a, b, and c  
   
-`def volSphere(r)`
+`volSphere(r)`
   returns the volume of a sphere given radius r  
 
 `permNote(n, r)`
@@ -59,8 +59,7 @@ In the main part, there are more methods listed below:
 `areaOfPolygonInCircle(sides, radius)`
   returns the area of a polygon inscribed in a cricle given the number of sides in the polygon and the radius of the circle  
 
-`cramersRule(q, w, e  
-            r, t, y)`
+`cramersRule(q, w, e, r, t, y)`
   returns x, y answers for an algebraic equation, such as: `4x - 5y = 3 and 3x + 2y = -10`. The `q`, `w`, `e`, `r`, `t`, `y` values would be `4, -5, 3, 3, 2, -10` and the method would return `(-1.9130434782608696, -2.130434782608696)`, which is the correct x, y, solution for this equation.  
           
 `stats(list)`
