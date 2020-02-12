@@ -102,7 +102,6 @@ def permNote(n, r):
 def combNote(n, r):
     return permNote(n, r)/math.factorial(r)
 
-
 # Returns a division quotient with a remainder
 def divideRemain(dividend, divisor):
     remainder = dividend % divisor
@@ -173,7 +172,6 @@ def cramersRule(q, w, e,
                r, t, y):
     divisor = (q * t) - (r * w)
     if divisor != 0:
-        divisor = (q * t) - (r * w)
         x = ((e * t) - (y * w)) / divisor
         y = ((q * y) - (r * e)) / divisor
         return x, y
