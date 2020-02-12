@@ -20,6 +20,9 @@ In the main part, there are more methods listed below:
  
 `gcd(a, b)`
   returns the greatest common denominator of numbers a and b  
+  
+`lcm(a, b)`
+  returns the lowest common multiple of numbers a and b  
  
 `isRealNumber(number)`
   returns True if number is real  
@@ -38,6 +41,9 @@ In the main part, there are more methods listed below:
 
 `permNote(n, r)`
   returns nPr, P standing for permutation notation  
+  
+`combNote(n, r)`
+  returns nCr, C standing for combination notation  
   
 `divideRemain(dividend, divisor)`
   returns dividend / divisor with a remainder instead of a decimal  
