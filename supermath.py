@@ -114,23 +114,36 @@ def divideRemain(dividend, divisor):
         return int(main), remainder
 
 # Trig functions in DEGREES like all the truly scientific minds prefer
-def sin(x):
-    return math.sin(math.radians(x))
 
-def cos(x):
-    return math.cos(math.radians(x))
+# small modification by ankith26, 
+# you can specify in the trigonometric function 
+# wether you want degree or radian with the degree being the default
+# if you want radians, use
+# sin(pi/2, False)
 
-def tan(x):
-    return math.tan(math.radians(x))
+def sin(x, degree = True):
+    if degree:
+        x = math.radians(x)
+    return math.sin(x)
 
-def csc(x):
-    return (1 / sin(x))
+def cos(x, degree = True):
+    if degree:
+        x = math.radians(x)
+    return math.cos(x)
 
-def sec(x):
-    return ((1 / cos(x)))
+def tan(x, degree = True):
+    if degree:
+        x = math.radians(x)
+    return math.tan(x)
 
-def cot(x):
-    return (1 / tan(x))
+def csc(x, degree = True):
+    return (1 / sin(x, degree))
+
+def sec(x, degree = True):
+    return (1 / cos(x, degree))
+
+def cot(x, degree = True):
+    return (1 / tan(x, degree))
 
 
 # Returns the equation of a parabola when given the coordinates of the vertex and focus. Vertex vars: (xv, yv) Focus vars: (xf, yf) 
