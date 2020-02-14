@@ -86,9 +86,9 @@ def quadratic(a, b, c):
         y = (-b - math.sqrt(exp(b, 2) - (4 * a * c))) / (2 * a)
         return x, y
     except ValueError:
-        return 'Square root of negative number error! Don\'t ever do that again!'
+        return 'The equation has no real roots!'
     except ZeroDivisionError:
-        return 'Divide by zero error! Don\'t ever do that again!'
+        return 'The equation entered is not a quadratic (how could you enter a = 0)!!'
 
 # Returns the volume of a sphere based on the radius
 def volSphere(r):
@@ -99,9 +99,9 @@ def volSphere(r):
 def permNote(n, r):
     return (math.factorial(n) / math.factorial((n - r)))
 
+# Combination notation
 def combNote(n, r):
     return permNote(n, r)/math.factorial(r)
-
 
 # Returns a division quotient with a remainder
 def divideRemain(dividend, divisor):
@@ -114,23 +114,36 @@ def divideRemain(dividend, divisor):
         return int(main), remainder
 
 # Trig functions in DEGREES like all the truly scientific minds prefer
-def sin(x):
-    return math.sin(math.radians(x))
 
-def cos(x):
-    return math.cos(math.radians(x))
+# small modification by ankith26, 
+# you can specify in the trigonometric function 
+# wether you want degree or radian with the degree being the default
+# if you want radians, use
+# sin(pi/2, False)
 
-def tan(x):
-    return math.tan(math.radians(x))
+def sin(x, degree = True):
+    if degree:
+        x = math.radians(x)
+    return math.sin(x)
 
-def csc(x):
-    return (1 / sin(x))
+def cos(x, degree = True):
+    if degree:
+        x = math.radians(x)
+    return math.cos(x)
 
-def sec(x):
-    return ((1 / cos(x)))
+def tan(x, degree = True):
+    if degree:
+        x = math.radians(x)
+    return math.tan(x)
 
-def cot(x):
-    return (1 / tan(x))
+def csc(x, degree = True):
+    return (1 / sin(x, degree))
+
+def sec(x, degree = True):
+    return (1 / cos(x, degree))
+
+def cot(x, degree = True):
+    return (1 / tan(x, degree))
 
 
 # Returns the equation of a parabola when given the coordinates of the vertex and focus. Vertex vars: (xv, yv) Focus vars: (xf, yf) 
@@ -169,11 +182,9 @@ def areaOfPolygonInCircle(sides, radius):
     return area
 
 # This method solves algebraic equations using Cramer's rule of matrixes with a problem looking like this:
-def cramersRule(q, w, e,
-               r, t, y):
+def cramersRule(q, w, e, r, t, y):
     divisor = (q * t) - (r * w)
     if divisor != 0:
-        divisor = (q * t) - (r * w)
         x = ((e * t) - (y * w)) / divisor
         y = ((q * y) - (r * e)) / divisor
         return x, y

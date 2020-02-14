@@ -1,5 +1,5 @@
 # Supermath
-This repo consists of one mudule I have written in python3 to help you cheat on your next math test, called supermath.py
+This repo consists of one module I have written in python3 to help you cheat on your next math test, called supermath.py
 
 This is a module meant for importing, not running. Don't be disappointed when you run it and nothing happens. It should work wonders for you though when you import it.
 
@@ -20,6 +20,9 @@ In the main part, there are more methods listed below:
  
 `gcd(a, b)`
   returns the greatest common denominator of numbers a and b  
+  
+`lcm(a, b)`
+  returns the lowest common multiple of numbers a and b  
  
 `isRealNumber(number)`
   returns True if number is real  
@@ -33,11 +36,14 @@ In the main part, there are more methods listed below:
 `quadratic(a, b, c)`
   returns x, y coordinates of a quadratic equation given a, b, and c  
   
-`def volSphere(r)`
+`volSphere(r)`
   returns the volume of a sphere given radius r  
 
 `permNote(n, r)`
   returns nPr, P standing for permutation notation  
+  
+`combNote(n, r)`
+  returns nCr, C standing for combination notation  
   
 `divideRemain(dividend, divisor)`
   returns dividend / divisor with a remainder instead of a decimal  
@@ -53,8 +59,7 @@ In the main part, there are more methods listed below:
 `areaOfPolygonInCircle(sides, radius)`
   returns the area of a polygon inscribed in a cricle given the number of sides in the polygon and the radius of the circle  
 
-`cramersRule(q, w, e  
-            r, t, y)`
+`cramersRule(q, w, e, r, t, y)`
   returns x, y answers for an algebraic equation, such as: `4x - 5y = 3 and 3x + 2y = -10`. The `q`, `w`, `e`, `r`, `t`, `y` values would be `4, -5, 3, 3, 2, -10` and the method would return `(-1.9130434782608696, -2.130434782608696)`, which is the correct x, y, solution for this equation.  
           
 `stats(list)`
