@@ -18,70 +18,69 @@ class Validate():
 average(listOfNums)
 ```
   returns the average of a list of numbers  \
-    \n  \n
     
  
 ```
 mean(listOfNums)
 ```
   same as average, different name  \
-    \
+    
     
  
 ```
 gcd(a, b)
 ```
   returns the greatest common denominator of numbers `a` and `b`  \
-    \
+   
     
  
 ```
 lcm(a, b)
 ```
   returns the lowest common multiple of numbers `a` and `b`  \
-    \
+    
     
  
 ```
 isRealNumber(number)
 ```
   returns True if number is real  \
-    \
+    
     
  
 ```
 squareRoot(number)
 ```
   returns the square root of number  \
-    \
+    
     
  
 ```
 fastExp(num, pow)
 ```
   returns num to the pow power using a super efficient algorithm  (I hope)  \
-    \
+    
     
  
 ```
 quadratic(a, b, c)
 ```
   returns x, y coordinates of a quadratic equation given `a`, `b`, and `c`  \
-    \
+    
     
  
 ```
 volSphere(r)
 ```
   returns the volume of a sphere given radius `r`  \
-    \
+    
     
 
 ```
 permNote(n, r)
 ```
   returns `nPr`, `P` standing for permutation notation  \
-    \
+    \  
     
  
 ```
