@@ -12,7 +12,7 @@ class Validate():
  `isWindows()` returns True if you are using a Windows PC.  
  `hasLenOf()` has two parameters called obj and length. It compares the length of an object such as a string or list and returns true if the length = the length param.
  
-In the main part, there are more methods listed below:  
+## Mathematical Functions:  
 
 ```
 average(listOfNums)
