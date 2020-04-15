@@ -37,35 +37,35 @@ gcd(a, b)
 ```
 lcm(a, b)
 ```
-  returns the lowest common multiple of numbers `a` and `b`  \n\n\n  
+  returns the lowest common multiple of numbers `a` and `b`  
     
     
  
 ```
 isRealNumber(number)
 ```
-  returns True if number is real  \
+  returns True if number is real  
     
     
  
 ```
 squareRoot(number)
 ```
-  returns the square root of number  \
+  returns the square root of number  
     
     
  
 ```
 fastExp(num, pow)
 ```
-  returns num to the pow power using a super efficient algorithm  (I hope)  \
+  returns num to the pow power using a super efficient algorithm  (I hope)  
     
     
  
 ```
 quadratic(a, b, c)
 ```
-  returns x, y coordinates of a quadratic equation given `a`, `b`, and `c`  \
+  returns x, y coordinates of a quadratic equation given `a`, `b`, and `c`  
     
     
  
@@ -86,21 +86,21 @@ permNote(n, r)
 ```
 combNote(n, r)
 ```
-  returns `nCr`, `C` standing for combination notation  \
+  returns `nCr`, `C` standing for combination notation  
      
     
  
 ```
 divideRemain(dividend, divisor)
 ```
-  returns `dividend / divisor` with a remainder instead of a decimal  \
+  returns `dividend / divisor` with a remainder instead of a decimal  
      
     
  
 ```
 sin(x), cos(x), tan(x), csc(x), sec(x) cot(x)
 ```
-  all return the corresponding trigonmetric function of number `x` in DEGREES  \
+  all return the corresponding trigonmetric function of number `x` in DEGREES  
      
     
  
@@ -109,7 +109,7 @@ parabolaEquation(xv, yv, xf, yf)
 ```
   this method returns the equation of a parabola given the x, y coordinates of the vertex and focus.  
   `xv`, `yv` are the x, y coordinates of the vertex  
-  `xf`, `yf` are the x, y coordinates of the focus  \
+  `xf`, `yf` are the x, y coordinates of the focus  
      
     
  
@@ -123,7 +123,7 @@ areaOfPolygonInCircle(sides, radius)
 ```
 cramersRule(q, w, e, r, t, y)
 ```
-  returns x, y answers for an algebraic equation, such as: `4x - 5y = 3 and 3x + 2y = -10`. The `q`, `w`, `e`, `r`, `t`, `y` values would be `4, -5, 3, 3, 2, -10` and the method would return `(-1.9130434782608696, -2.130434782608696)`, which is the correct x, y, solution for this equation.  \
+  returns x, y answers for an algebraic equation, such as: `4x - 5y = 3 and 3x + 2y = -10`. The `q`, `w`, `e`, `r`, `t`, `y` values would be `4, -5, 3, 3, 2, -10` and the method would return `(-1.9130434782608696, -2.130434782608696)`, which is the correct x, y, solution for this equation.  
      
     
  
