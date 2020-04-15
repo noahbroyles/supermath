@@ -17,7 +17,9 @@ class Validate():
 ```
 average(listOfNums)
 ```
-  returns the average of a list of numbers  
+  returns the average of a list of numbers  \
+    \
+      \
   
    
    
