@@ -17,27 +17,27 @@ class Validate():
 ```
 average(listOfNums)
 ```
-  returns the average of a list of numbers  \
+  returns the average of a list of numbers  
     
  
 ```
 mean(listOfNums)
 ```
-  same as average, different name  \
+  same as average, different name  
     
     
  
 ```
 gcd(a, b)
 ```
-  returns the greatest common denominator of numbers `a` and `b`  \  
+  returns the greatest common denominator of numbers `a` and `b`   
    
     
  
 ```
 lcm(a, b)
 ```
-  returns the lowest common multiple of numbers `a` and `b`  \  
+  returns the lowest common multiple of numbers `a` and `b`  \n\n\n  
     
     
  
