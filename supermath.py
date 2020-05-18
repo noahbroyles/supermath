@@ -2,8 +2,7 @@
 '''This is a module designed either to fit in all the things that the regular Python math module 'missed', or simply
 to make them easier to use.'''
 
-# Author: Noah Broyles
-# Email: noah@javamate.net
+# Authors: Noah Broyles and ankith26
 # Copyright: "None"
 
 
