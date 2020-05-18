@@ -250,4 +250,4 @@ def stats(list):
     variance = exp(standard, 2)
 
     # Return all the values
-    return "mean = " + str(mean) + ", median = " + str(median) + ", range = " + str(r) + ", mode = " + str(mode) + ", standard deviation = " + str(standard) + ", variance = " + str(variance)
+    return mean, median, r, mode, standard, variance
