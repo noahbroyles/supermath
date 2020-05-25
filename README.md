@@ -18,33 +18,32 @@ class Validate():
 average(listOfNums)
 ```
   returns the average of a list of numbers  
-    
+<br><br>
  
 ```
 mean(listOfNums)
 ```
   same as average, different name  
-    
+<br><br>
     
  
 ```
 gcd(a, b)
 ```
-  returns the greatest common denominator of numbers `a` and `b`   
-   
-<br>
- 
+  returns the greatest common denominator of numbers `a` and `b`
+<br><br>
+  
 ```
 lcm(a, b)
 ```
   returns the lowest common multiple of numbers `a` and `b`  
-    
- <br>
+<br><br>    
+
 ```
 isRealNumber(number)
 ```
   returns True if number is real  
-  <br>  
+<br><br>  
     
  
 ```
@@ -52,56 +51,54 @@ squareRoot(number)
 ```
   returns the square root of number  
     
-    <br>
+<br><br>
  
 ```
 fastExp(num, pow)
 ```
   returns num to the pow power using a super efficient algorithm  (I hope)  
     
-    <br>
+<br><br>
  
 ```
 quadratic(a, b, c)
 ```
   returns x, y coordinates of a quadratic equation given `a`, `b`, and `c`  
     
-    <br>
+<br><br>
  
 ```
 volSphere(r)
 ```
   returns the volume of a sphere given radius `r`  
     
-    <br>
+<br><br>
 
 ```
 permNote(n, r)
 ```
   returns `nPr`, `P` standing for permutation notation  
        
-    <br>
+<br><br>
  
 ```
 combNote(n, r)
 ```
   returns `nCr`, `C` standing for combination notation  
-     <br>
+<br><br>
     
  
 ```
 divideRemain(dividend, divisor)
 ```
   returns `dividend / divisor` with a remainder instead of a decimal  
-     
-    <br>
+<br><br>
  
 ```
 sin(x), cos(x), tan(x), csc(x), sec(x) cot(x)
 ```
   all return the corresponding trigonmetric function of number `x` in DEGREES  
-     
-    <br>
+<br><br>
  
 ```
 parabolaEquation(xv, yv, xf, yf)
@@ -110,14 +107,14 @@ parabolaEquation(xv, yv, xf, yf)
   `xv`, `yv` are the x, y coordinates of the vertex  
   `xf`, `yf` are the x, y coordinates of the focus  
      
-    <br>
+<br><br>
  
 ```
 areaOfPolygonInCircle(sides, radius)
 ```
   returns the area of a polygon inscribed in a cricle given the number of sides in the polygon and the radius of the circle  \
      
-    <br>
+<br><br>
  
 ```
 cramersRule(q, w, e, r, t, y)
