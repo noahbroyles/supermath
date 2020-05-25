@@ -32,20 +32,19 @@ gcd(a, b)
 ```
   returns the greatest common denominator of numbers `a` and `b`   
    
-    
+<br>
  
 ```
 lcm(a, b)
 ```
   returns the lowest common multiple of numbers `a` and `b`  
     
-    
- 
+ <br>
 ```
 isRealNumber(number)
 ```
   returns True if number is real  
-    
+  <br>  
     
  
 ```
@@ -53,41 +52,41 @@ squareRoot(number)
 ```
   returns the square root of number  
     
-    
+    <br>
  
 ```
 fastExp(num, pow)
 ```
   returns num to the pow power using a super efficient algorithm  (I hope)  
     
-    
+    <br>
  
 ```
 quadratic(a, b, c)
 ```
   returns x, y coordinates of a quadratic equation given `a`, `b`, and `c`  
     
-    
+    <br>
  
 ```
 volSphere(r)
 ```
-  returns the volume of a sphere given radius `r`  \
+  returns the volume of a sphere given radius `r`  
     
-    
+    <br>
 
 ```
 permNote(n, r)
 ```
-  returns `nPr`, `P` standing for permutation notation  \
+  returns `nPr`, `P` standing for permutation notation  
        
-    
+    <br>
  
 ```
 combNote(n, r)
 ```
   returns `nCr`, `C` standing for combination notation  
-     
+     <br>
     
  
 ```
@@ -95,14 +94,14 @@ divideRemain(dividend, divisor)
 ```
   returns `dividend / divisor` with a remainder instead of a decimal  
      
-    
+    <br>
  
 ```
 sin(x), cos(x), tan(x), csc(x), sec(x) cot(x)
 ```
   all return the corresponding trigonmetric function of number `x` in DEGREES  
      
-    
+    <br>
  
 ```
 parabolaEquation(xv, yv, xf, yf)
@@ -111,14 +110,14 @@ parabolaEquation(xv, yv, xf, yf)
   `xv`, `yv` are the x, y coordinates of the vertex  
   `xf`, `yf` are the x, y coordinates of the focus  
      
-    
+    <br>
  
 ```
 areaOfPolygonInCircle(sides, radius)
 ```
   returns the area of a polygon inscribed in a cricle given the number of sides in the polygon and the radius of the circle  \
      
-    
+    <br>
  
 ```
 cramersRule(q, w, e, r, t, y)
@@ -126,7 +125,7 @@ cramersRule(q, w, e, r, t, y)
   returns x, y answers for an algebraic equation, such as: `4x - 5y = 3 and 3x + 2y = -10`. The `q`, `w`, `e`, `r`, `t`, `y` values would be `4, -5, 3, 3, 2, -10` and the method would return `(-1.9130434782608696, -2.130434782608696)`, which is the correct x, y, solution for this equation.  
      
     
- 
+ <br>
 ```
 stats(list)
 ```
