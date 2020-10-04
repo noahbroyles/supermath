@@ -1,15 +1,6 @@
 # Supermath
 This repo consists of one module I have written in python3 to help you cheat on your next math test, called `supermath.py`.  
 <br>
-```
-class Validate():
-```
-  This class has four methods: `isLinux()`, `isMac()`, `isWindows()` and `hasLenOf(object, length)`  
- `isLinux()` returns True if you are using a Linux PC.  
- `isMac()` returns True if you are using a Mac.  
- `isWindows()` returns True if you are using a Windows PC.  
- `hasLenOf()` has two parameters called obj and length. It compares the length of an object such as a string or list and returns true if the length = the length param.
- 
 ## Mathematical Functions:  
 
 ```
