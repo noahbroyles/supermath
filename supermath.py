@@ -199,12 +199,12 @@ def cramersRule(q, w, e, r, t, y):
 
 
 # This method gives the statistics on a list of numbers. I am quite proud of it!
-def stats(lis):
+def stats(lis: list) -> dict:
     # Get vars
     length = len(lis)
     lis = sorted(lis)
 
-    # Get mean
+    # Get the mean
     mean = average(lis)
 
     # Get median
@@ -222,24 +222,23 @@ def stats(lis):
             median = (lis[in1] + lis[in2]) / 2
 
     # Get range
-    r = lis[-1] - lis[0]  # Whew! That was pretty easy!
+    r = lis[-1] - lis[0]  # Whew! That was pretty easy! We can do that because the list was sorted.
 
     # Get modes / mode
     if not (length <= 1):
         modes = []
-        copy = lis.copy()
-        try:
-            for index in range(len(copy)):
-                if copy[index - 1] == copy[index]:
-                    modes.append(copy[index])
-                    copy.pop(index - 1)
-        except IndexError:
-            pass
-        mode = list(set([number for number in modes]))
+        detailed_modes = []
+        for element in set(lis):
+            cnt = lis.count(element)
+            if cnt > 1:
+                modes.append(element)
+                detailed_modes.append({"val": element, "occurrences": cnt})
+
+        mode = list(set(modes))
         if len(modes) == 0:
-            mode = None
+            mode, detailed_modes = None, None
     else:
-        mode = None
+        mode, detailed_modes = None, None
 
     # Get standard deviation
     new = []
@@ -252,7 +251,7 @@ def stats(lis):
     variance = fastExp(standard, 2)
 
     # Return all the values
-    return {"mean": mean, "median": median, "range": r, "mode": mode, "standardDeviation": standard, "variance": variance}
+    return {"mean": mean, "median": median, "range": r, "mode": mode, "detailed_mode": sorted(detailed_modes, key=lambda d: d['occurrences'], reverse=True), "standardDeviation": standard, "variance": variance}
 
 
 def isPrime(n):
