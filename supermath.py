@@ -39,18 +39,18 @@ def lcm(a, b):
     return (a * b) / gcd(a, b)
 
 
-def isRealNumber(number):
+def is_real_number(number):
     if not math.isnan(number):
         return True
     else:
         return False
 
 
-def squareRoot(number):
+def square_root(number):
     return math.sqrt(number)
 
 
-def fastExp(num, power):
+def fast_exp(num, power):
     # Thanks to anteprandium @ https://gist.github.com/anteprandium/3c5d855f96e3d39fe604 for the algorithm for super fast exponentiation in python!
     def bits_of(m):
         n = int(m)
@@ -82,23 +82,23 @@ def quadratic(a, b, c):
 
 
 # Returns the volume of a sphere based on the radius
-def volSphere(r):
+def vol_sphere(r):
     global pi
     return 4 / 3 * (pi * r ** 3)
 
 
 # Permutation notation
-def permNote(n, r):
+def permutation_notation(n, r):
     return math.factorial(n) / math.factorial((n - r))
 
 
 # Combination notation
-def combNote(n, r):
+def combination_notation(n, r):
     return permNote(n, r) / math.factorial(r)
 
 
 # Returns a division quotient with a remainder
-def divideRemain(dividend, divisor):
+def divide_remain(dividend, divisor):
     remainder = dividend % divisor
     if remainder == 0:
         return int(dividend / divisor), 0
@@ -147,7 +147,7 @@ def cot(x, degree=True):
 
 
 # Returns the equation of a parabola when given the coordinates of the vertex and focus. Vertex vars: (xv, yv) Focus vars: (xf, yf)
-def parabolaEquation(xv, yv, xf, yf):
+def parabola_equation(xv, yv, xf, yf):
     # I am so proud of this function! I can't sing it's praise enough!
     try:
         h = xv
@@ -174,7 +174,7 @@ def parabolaEquation(xv, yv, xf, yf):
         return "Those are not valid data points"
 
 
-def areaOfPolygonInCircle(sides, radius):
+def area_of_polygon_in_circle(sides, radius):
     angle = (360 / sides) / 2
     x = radius * (sin(angle))
     A = radius * (cos(angle))
@@ -183,7 +183,7 @@ def areaOfPolygonInCircle(sides, radius):
 
 
 # This method solves algebraic equations using Cramer's rule of matrices with a problem looking like this:
-def cramersRule(q, w, e, r, t, y):
+def cramers_rule(q, w, e, r, t, y):
     divisor = (q * t) - (r * w)
     if divisor != 0:
         x = ((e * t) - (y * w)) / divisor
@@ -254,7 +254,7 @@ def stats(lis: list) -> dict:
     return {"mean": mean, "median": median, "range": r, "mode": mode, "detailed_mode": sorted(detailed_modes, key=lambda d: d['occurrences'], reverse=True), "standardDeviation": standard, "variance": variance}
 
 
-def isPrime(n):
+def is_prime(n):
     # Miller-Rabin primality test implemented in Python
     if n == 2:
         return True
