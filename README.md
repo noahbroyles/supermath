@@ -29,21 +29,21 @@ lcm(a, b)
 <br><br>    
 
 ```
-isRealNumber(number)
+is_real_number(number)
 ```
   returns True if number is real  
 <br><br>  
     
  
 ```
-squareRoot(number)
+square_root(number)
 ```
   returns the square root of number  
     
 <br><br>
  
 ```
-fastExp(num, pow)
+fast_exp(num, pow)
 ```
   returns num to the pow power using a super efficient algorithm  (I hope)  
     
@@ -57,28 +57,28 @@ quadratic(a, b, c)
 <br><br>
  
 ```
-volSphere(r)
+vol_sphere(r)
 ```
   returns the volume of a sphere given radius `r`  
     
 <br><br>
 
 ```
-permNote(n, r)
+permutation_notation(n, r)
 ```
   returns `nPr`, `P` standing for permutation notation  
        
 <br><br>
  
 ```
-combNote(n, r)
+combination_notation(n, r)
 ```
   returns `nCr`, `C` standing for combination notation  
 <br><br>
     
  
 ```
-divideRemain(dividend, divisor)
+divide_remain(dividend, divisor)
 ```
   returns `dividend / divisor` with a remainder instead of a decimal  
 <br><br>
@@ -90,7 +90,7 @@ sin(x), cos(x), tan(x), csc(x), sec(x) cot(x)
 <br><br>
  
 ```
-parabolaEquation(xv, yv, xf, yf)
+parabola_equation(xv, yv, xf, yf)
 ```
   this method returns the equation of a parabola given the x, y coordinates of the vertex and focus.  
   `xv`, `yv` are the x, y coordinates of the vertex  
@@ -99,14 +99,14 @@ parabolaEquation(xv, yv, xf, yf)
 <br><br>
  
 ```
-areaOfPolygonInCircle(sides, radius)
+area_of_polygon_in_circle(sides, radius)
 ```
   returns the area of a polygon inscribed in a cricle given the number of sides in the polygon and the radius of the circle  \
      
 <br><br>
  
 ```
-cramersRule(q, w, e, r, t, y)
+cramers_rule(q, w, e, r, t, y)
 ```
   returns x, y answers for an algebraic equation, such as: `4x - 5y = 3 and 3x + 2y = -10`. The `q`, `w`, `e`, `r`, `t`, `y` values would be `4, -5, 3, 3, 2, -10` and the method would return `(-1.9130434782608696, -2.130434782608696)`, which is the correct x, y, solution for this equation.  
      
